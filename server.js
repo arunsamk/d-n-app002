@@ -10,7 +10,7 @@ application.use(express.static(__dirname + '/public'));
 
 //Setting the home page
 application.get('*', function(request, response){
-	res.render('index');
+	response.render('index');
 });
 
 application.listen(port, function(){
